@@ -17,15 +17,15 @@ git clone https://github.com/theno/revealjs_template.git
 
 ```sh
 # backup rt
-mv realjs_template/slides.md slides_rt.md
-mv realjs_template/index.html index_rt.md
+mv revealjs_template/slides.md slides_rt.md
+mv revealjs_template/index.html index_rt.md
 
 # re-hardlink with rx
-cd revealjs_template/reveal.js
+cd revealjs_template
 rm -f slides.md index.html
-ln -s ../../index_rx.html index.html
-ln -s ../../OmicsImagingSeq.md slides.md
-cd ../..
+ln -s ../index_rx.html index.html
+ln -s ../OmicsImageSeq.md slides.md
+cd ..
 ```
 
 
@@ -38,4 +38,4 @@ sudo apt install npm
 npm update  # only required once
 npm start
 ```
-vscode liveserver should now work on the relinked index.html
+vscode liveserver should now work on the relinked index.html under revealjs_template
