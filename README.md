@@ -21,11 +21,9 @@ mv revealjs_template/slides.md slides_rt.md
 mv revealjs_template/index.html index_rt.md
 
 # re-hardlink with rx
-cd revealjs_template
-rm -f slides.md index.html
-ln -s ../index_rx.html index.html
-ln -s ../OmicsImageSeq.md slides.md
-cd ..
+ln -snf ../index_rx.html revealjs_template/index.html
+ln -snf ../OmicsImageSeq.md revealjs_template/slides.md
+ln -snf ../resource revealjs_template/resource
 ```
 
 
@@ -38,4 +36,4 @@ sudo apt install npm
 npm update  # only required once
 npm start
 ```
-vscode liveserver should now work on the relinked index.html under revealjs_template
+vscode liveserver should now work on the relinked index.html under **revealjs_template**

@@ -5,6 +5,7 @@ backup:
 	mv $(DIR)/slides.md slides_rt.md
 	mv $(DIR)/index.html index_rt.md
 link:
+	ln -snf ../resource revealjs_template/resource
 	@echo "Linking IDX=$(IDX) MD=$(MD)"
 	ln -snf ../$(IDX) $(DIR)/index.html
 	ln -snf ../$(MD) $(DIR)/slides.md
