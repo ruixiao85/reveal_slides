@@ -28,7 +28,7 @@
         <div class="slides">
             <section>
                 <section>
-                    <h1>Integrated Omics, Biomedical Imaging, and Sequencing Data Analysis</h1>
+                    <h1>Integrated Omics, Machine Learning,<br/> and Data Mining</h1>
           <hr />
                     <div style="display:grid;gap:15px">
             <img style="grid-row:1;grid-column:1;width:66%;margin:auto" src="resource/SJTU.png" />
@@ -99,14 +99,14 @@
                 <section>
                     <h1>LSU-PhD</h1>
           <hr style="margin:5%" />
-          <h4>Physiological responses and transcriptomic consequences on adult mice exposed in utero to smoke exposure -
+          <h4>Physiological responses, transcriptomic, epigenomic consequences on adult mice exposed in utero to smoke exposure -
             Inflammation, Asthma, ...</h4>
                     <img style="max-width:24vw;max-height:18vh" src="resource/LSU.png" />
                 </section>
                 <section>
                     <h2>Smoking prevalence and detrimental effects</h2>
           <hr />
-                    <div style="display:grid;gap:25px;">
+                    <div style="display:grid;gap:15px;">
                     <div style="grid-column:1/4">
               <ul style="float:left">
                         <li>According to <i>"Pregnancy Risk Assessment and Monitoring System, 2010."</i> </li>
@@ -162,7 +162,7 @@
             <li>Unbiased detection: no pre-designed probes needed and suitable for RNAs of all sizes, including
               messengerRNAs (mRNA) and microRNAs (miRNA).</li>
                     </ul>
-          <div style="display:grid;gap:25px">
+          <div style="display:grid;gap:15px">
             <img style="grid-column:1;height:22vh;margin:auto" src="resource/Microarray.png" />
             <img style="grid-column:2;height:12vh;margin:auto" src="resource/RNAseq.png" />
                     </div>
@@ -170,11 +170,11 @@
 
                 <section>
                     <h2>Our findings also largely confirmed the increased sensitivity of RNA-seq</h2>
-          <p>Across pairwise comparisons for the common genes with different baseline expression levels, we found</p>
+          <p>Across pairwise comparisons with different baseline expression levels:</p>
                     <ul>
-                        <li>Medium-high correlation for top 25% high abundance genes: orange dots</li>
-                        <li>Medium-low correlation for middle 50% : green dots</li>
-                        <li>Very-low correlation for bottom 25% low abundance genes: blue dots</li>
+                        <li>Medium-high correlation for top 25% <b>high</b> abundance genes: orange dots</li>
+                        <li>Medium-low correlation for <b>middle</b> 50% : green dots</li>
+                        <li>Very-low correlation for bottom 25% <b>low</b> abundance genes: blue dots</li>
                     </ul>
                     <img style="height:38vh" src="resource/RNAseq-Microarray.png" />
                 </section>
@@ -185,7 +185,7 @@
             Biplot of both pairwise comparisons, labels: FDR&lt;0.05. <br/>
             There are more up-regulated genes and more differentially expressed between males.
           </p>
-          <div style="display:grid;gap:25px;">
+          <div style="display:grid;gap:15px;">
           <img style="grid-column:1" src="resource/SOFM_biplot1a.png" />
           <img style="grid-column:2" src="resource/SOFM_biplot2.png" />
           </div>
@@ -193,7 +193,7 @@
 
         <section>
           <h2>in utero SHS exposure modulated important biological functions and canonical pathways.</h2>
-          <div style="display:grid;gap:15px;">
+          <div style="display:grid;gap:15px">
             <p style="grid-column:1">
               Analyzed and visualized in Ingenuity pathway analysis (IPA).<br/><br/>
               All genes identified in the analysis were up-regulated.<br/><br/>
@@ -208,21 +208,20 @@
           </section>
           <section>
           <h2>Potential epigenetic regulations by miRNAs</h2>
-          <div style="display:grid;gap:25px;">
+          <div style="display:grid;gap:15px">
             <p style="grid-row:1;grid-column:1">
             miRNAs are short noncoding RNAs that function as posttranscriptional modulators of gene expression by either <b>promoting mRNA degradation</b> or <b>blocking protein translation</b>.
             </p>
-            <img style="grid-row:1/3;grid-column:2/5;max-width:45vw;max-height:74vh" src="resource/miRNA_mech.png" alt="He L, Hannon GJ. 2004. MicroRNAs: small RNAs with a big role in gene regulation. Nat Rev Genet 5(7):522-531.
+            <img style="grid-row:1/3;grid-column:2/5;max-height:55vh" src="resource/miRNA_mech.png" title="He L, Hannon GJ. 2004. MicroRNAs: small RNAs with a big role in gene regulation. Nat Rev Genet 5(7):522-531.
             " />
-            <img style="grid-row:2;grid-column:1;max-width:35vw;max-height:30vh" src="resource/miRNATriangle1.png" alt="He L, Hannon GJ. 2004. MicroRNAs: small RNAs with a big role in gene regulation. Nat Rev Genet 5(7):522-531.
-            " class="#fragment" />
+            <img style="grid-row:2;grid-column:1;max-height:15vh" src="resource/miRNATriangle1.png" class="#fragment" />
           </div>
 
           </section>
 
           <section>
           <h2>miRNA profiling revealed more miRNAs dysregulated by in utero SHS exposure than those biased by sex.</h2>
-          <div style="display:grid;gap:25px;">
+          <div style="display:grid;gap:15px;">
             <p style="grid-row:1;grid-column:1/3">GLM: ~ Smoke * Sex</p>
             <img style="grid-row:2;grid-column:1/3;max-height:36vh" src="resource/miRNA_venn.png" />
             <img style="grid-row:1/3;grid-column:3/6;max-height:64vh" src="resource/miRNA_heatmap.png" class="#fragment" />
@@ -252,51 +251,80 @@
           <p>
             Cytogenetic band information (114 in mouse) associated with genes and miRNAs is great resource to investigate the transcriptional activity over different chromosome locations.
           </p>
-          <div style="display:grid;gap:25px;">
-            <img style="grid-column:1;max-height:55vh;margin:auto" src="resource/miRNA_cytoband_basic.png" />
-            <img style="grid-column:2;max-height:46vh;margin:auto" src="resource/miRNA_cytoband.png" class="#fragment" />
+          <div style="display:grid;gap:15px;">
+            <img style="grid-column:1;max-height:45vh;margin:auto" src="resource/miRNA_cytoband_basic.png" />
+            <img style="grid-column:2;max-height:44vh;margin:auto" src="resource/miRNA_cytoband.png" class="#fragment" />
           </div>
           </section>
 
           <section>
           <h2>Inceased transcriptional activity points to a cluster of pro-inflammatory genes and miRNAs.</h2>
-          <div style="display:grid;gap:25px;">
+          <div style="display:grid;gap:15px;">
             <p style="grid-row:1;grid-column:1">
             Chr11C is enriched with upregulated genes and miRNAs.
             </p>
-            <img style="grid-row:1/3;grid-column:2/5;max-width:55vw;;max-height:66vh" src="resource/miRNA_cytoband_inflam.png" />
-            <img style="grid-row:2;grid-column:1;max-width:35vw;max-height:30vh" src="resource/miRNATriangle2.png" class="#fragment" />
+            <img style="grid-row:1/3;grid-column:2/5;max-height:75vh" src="resource/miRNA_cytoband_inflam.png" />
+            <img style="grid-row:2;grid-column:1;max-height:15vh" src="resource/miRNATriangle2.png" class="#fragment" />
           </div>
           </section>
 
           <section>
           <h2>16 tumor suppressor genes are predicted targets and show inverse correlation with oncomir expression.</h2>
-          <div style="display:grid;gap:15px;">
-            <img style="grid-row:1;grid-column:1;max-width:36vw;max-height:44vh" src="resource/miRNA_db.png" />
-            <p style="grid-row:2;grid-column:1">
-              Spearman’s r ≤ -0.7, |Fold change| ≥ 1.5 <br/>
-              <small>Zhao et al. 2013. TSGene: a web resource for tumor suppressor genes. Nucleic Acids Res. 41:D970-976.</small>
-            </p>
-            <img style="grid-row:1/3;grid-column:2/4;max-width:53vw;max-height:62vh" src="resource/miRNA_anti_heatmap.png" class="#fragment" />
+          <p style="font-size:68%">
+            Spearman’s r ≤ -0.7, |Fold change| ≥ 1.5 <br/>
+            <small>Zhao et al. 2013. TSGene: a web resource for tumor suppressor genes. Nucleic Acids Res. 41:D970-976.</small>
+          </p>
+          <div style="display:grid;gap:5px;grid-template-columns:1fr 1.5fr;">
+            <div  style="grid-row:1;grid-column:1">
+              <img style="max-height:48vh" src="resource/miRNA_db.png" />
+            </div>
+            <img style="grid-row:2;grid-column:1;max-height:15vh" src="resource/miRNATriangle3.png" class="#fragment" />
+            <img style="grid-row:1/3;grid-column:2;max-height:75vh" src="resource/miRNA_anti_heatmap.png" class="#fragment" />
           </div>
+        </section>
+        <section>
+          <h1>Summary</h1>
+          <table style="font-size:50%">
+            <tr>
+              <th></th>
+              <th>Integrated Omics</th>
+              <th>Machine Learning</th>
+              <th>External Database</th>
+              <th>Workflow Automation</th>
+            </tr>
+            <tr>
+              <th>LSU-PhD</th>
+              <td>
+                Phenome (lung);
+                Transcrptome;
+                Epigenome
+              </td>
+              <td></td>
+              <td>Gene (WebGestalt);
+                microRNA (miRBase, TargetScan)</td>
+                <td>VBA macro; VB/WinForm app</td>
+              </tr>
+          </table>
+        </section>
       </section>
-            </section>
 
-            <section>
-                <section>
-                    <h1>CU-PostDoc</h1>
+      <section>
+        <section>
+          <h1>CU-PostDoc</h1>
           <hr style="margin:5%" />
-          <h4>Lung injury and structural changes due to prolonged smoke exposure - Acute lung injury, Emphysema, ...
-          </h4>
-                    <img style="max-width:24vw;max-height:18vh" src="resource/CU.png" />
-                </section>
-
+          <h4>Lung injury and structural changes due to prolonged smoke exposure - Acute lung injury, Emphysema, ...</h4>
+          <img style="max-width:24vw;max-height:18vh" src="resource/CU.png" />
+        </section>
 
         <section>
-
           <h2>Areas of research at CU</h2>
-          The effects of adult chronic smoke exposure can be better examined by: i) investigating microbiome to identify microbial organisms that are associated with disease progression and susceptibility differences; ii) developing sensitive, unbiased, and robust computational methods for detecting changes in the lung.
-
+          <p>
+          The effects of adult chronic smoke exposure can be better examined by:
+          <ol>
+            <li>investigating microbiome to identify microbial organisms that are associated with disease progression and susceptibility differences.</li>
+            <li>developing sensitive, unbiased, and robust computational methods for detecting changes in the lung.</li>
+          </ol>
+        </p>
           <ul>
             <li>Find suseptibity differences to smoke exposure across different strains of mice:</li>
             <ul>
@@ -312,14 +340,16 @@
           </section>
           <section>
 
-          <h2>Hypothesis: Baseline gut microbiome profiles differ across mouse strains and are modulated by cigarette smoke exposure</h2>
-          <div style="display:grid;gap:25px;">
-            <p style="grid-row:1;grid-column:1/3">
-            Susceptibility to smoke induced lung injury differs among human population.<br/><br/><br/>
-            Confirm lung responses <-> explore gut microbiome
+          <h2>Hypothesis: Baseline microbiome profiles differentially modulate responses to cigarette smoke exposure</h2>
+          <div style="display:grid;gap:5px;">
+            <p style="grid-row:1;grid-column:1/5">
+            Susceptibility to smoke induced lung injury differs across human population.
+            <br/>
+            Comparing differences across baseline vs response enables us to learn about microbiome predisposition.<br/>
+            We look into the gut microbiome (abundant, well-characterized) across 4 strains of mice.
             </p>
-            <img style="grid-row:1;grid-column:3;max-height:28vh" src="resource/mibiome_population.jpg" />
-            <img style="grid-row:2;grid-column:1/4;max-height:44vh" src="resource/mibiome_4mice.png" />
+            <img style="grid-row:2;grid-column:1;max-height:28vh;margin:auto" src="resource/mibiome_population.jpg" />
+            <img style="grid-row:2;grid-column:2/5;max-height:36vh;margin:auto" src="resource/mibiome_4mice.png" />
           </div>
 
 
@@ -329,125 +359,275 @@
           <h2>Baseline strain-specific differences in the gut microbiome.</h2>
           <div style="display:grid;">
             <div style="grid-column:1/6">
-            <img src="resource/mibiome_1circle.jpg" alt= "Segata N, et al.
+            <img style="max-height:65vh" src="resource/mibiome_1circle.jpg" title= "Segata N, et al.
             GraPhlAn.
             " />
             </div>
             <div style="grid-column:6/10">
-            <p>Most significant taxa tested in LEfSe (LDA>4.2):</p>
-            <img src="resource/mibiome_baseline_4bar.jpg" alt="Segata N, et al. Genome Biol. 2011. LEfSe (Linear discriminant analysis Effect Size).
-            " />
+              <p>Most significant taxa tested in LEfSe (LDA>4.2):</p>
+              <img style="max-height:42vh" src="resource/mibiome_baseline_4bar.jpg" title="Segata N, et al. Genome Biol. 2011. LEfSe (Linear discriminant analysis Effect Size).
+              " />
             </div>
           </div>
           </section>
 
           <section>
-          <h2>Smoke exposure leads to higher degree of inflammation and microbiome changes in AKR/J and C57BL/6J mice.</h2>
+          <h2>More inflammation and microbiome changes were found in AKR/J and C57BL/6J mice.</h2>
           <p>
           Beta diversity: variation of microbial communities, difference in taxonomic abundance profiles from different samples.
-          UniFrac: sequence distances (phylogenetic tree), based on the fraction of branch length that is shared between two samples or unique to one or the other sample.
+          <small>UniFrac: sequence distances (phylogenetic tree), based on the fraction of branch length shared between two samples or unique to one or the other sample.</small>
           </p>
           <div style="display:grid">
             <div style="grid-column:1">
-              <img src="resource/mibiome_inflam.png" />
+              <img style="max-height:39vh;margin-bottom:0px" src="resource/mibiome_inflam.png" />
             </div>
             <div style="grid-column:2">
-              <img src="resource/mibiome_PCoA.jpg" />
+              <img style="max-height:39vh;margin-bottom:0px" src="resource/mibiome_PCoA.jpg" />
             </div>
           </div>
-
-
           </section>
           <section>
 
-          <h2>Most resistant strain has the highest baseline of the inflammatory disease associated microbes that are increased by smoke exposure.</h2>
-          <u>Hygiene hypothesis</u>: early exposure to particular microorganisms protects against allergic diseases by contributing to the development of the immune system. In particular, a lack of exposure is thought to lead to defects in the establishment of immune tolerance.
+          <h2>Proinflammatory microbes induced by smoke exposure have high baseline in resistant strain.</h2>
+          <p>
+            <u>Hygiene hypothesis</u>: early exposure to particular microorganisms protects against allergic diseases by contributing to the development of the immune system. A lack of exposure is thought to lead to defects in the establishment of immune tolerance.
+          </p>
           <div style="display:grid">
             <div style="grid-column:1">
-              <p>baseline strain differences</p>
-              <img src="resource/mibiome_1circle.jpg" />
+              <p><small>
+              <b>A/J</b>: Resistant strains with mild inflammation in the lung and blood.<br/>
+              <b>AKR/J</b>: Susceptible strains with severe inflammation in the lung and blood.
+              </small></p>
+              <img style="max-height:33vh" src="resource/mibiome_1circle.jpg" />
             </div>
             <div style="grid-column:2">
-              <img src="resource/mibiome_4circleA.png" />
-              <small>
-              A/J: Resistant strains with mild inflammation in the lung and blood<br/>
-              AKR/J: Susceptible strains with severe inflammation in the lung and blood
-              </small>
+              <img style="max-height:41vh" src="resource/mibiome_4circleA.png" />
             </div>
           </div>
 
           </section>
           <section>
 
-          <h2>Lung Morphometric analysis - Gridline Counting</h2>
-
-          <div style="display:grid">
+          <h2>Lung Morphometric Analysis - Gridline Counting</h2>
+          <p>Traditionally, people perform gridline counting to assess Mean Linear Intercept (MLI) to approximate the average airspace (µm). Drawbacks: labor intensive, time consuming.</p>
+          <div style="display:grid;">
             <div style="grid-row:1/3;grid-column:1;margin:auto">
-              <img src="resource/lung_healthy_des.jpg" />
+              <img style="max-height:26vh" src="resource/lung_healthy_des.jpg" />
             </div>
             <div style="grid-row:1;grid-column:2">
-              <img src="resource/dp_emphy.jpg" />
+              <img style="max-height:22vh" src="resource/dp_emphy.jpg" />
             </div>
             <div style="grid-row:2;grid-column:2">
-              <img src="resource/dp_healthy.jpg" />
+              <img style="max-height:22vh" src="resource/dp_healthy.jpg" />
             </div>
             <div style="grid-row:1/3;grid-column:3;margin:auto">
-              <img src="resource/glc_basic.jpg" />
+              <img style="max-height:26vh" src="resource/glc_basic.jpg" />
             </div>
             <div style="grid-row:3;grid-column:1/4">
-              <p>MLI method using grid lines to count number of intercepts to evaluate the average air space (µm).</p>
             </div>
           </div>
-
           </section>
+
           <section>
-
-          <h2></h2> Blob detection and feature extraction can be done within a second for further analysis.
-
-
-          <div style="display:grid">
-            <div style="grid-row:1;grid-column:1">
-              <img src="resource/dp_emphy_gc.jpg" />
+            <h2>Computer vision and machine learning can be easily applied to extract airspaces and features.</h2>
+            <div style="display:grid;grid-gap:15px">
+              <div style="grid-row:1;grid-column:1">
+                <img style="max-height:24vh" src="resource/dp_emphy_gc.jpg" />
+              </div>
+              <div style="grid-row:2;grid-column:1">
+                <img style="max-height:24vh" src="resource/dp_emphy_cv.png" />
+              </div>
+              <div style="grid-row:1/3;grid-column:2">
+                <p>Computer vision can instantly extract hundreds of enclosed airspaces and provide several important features for further analysis.<br/>
+                  <u>Area</u> is the most <b>representative</b>, <b>robust</b> (not easily biased by scaling), <b>widely-supported</b> (across many software packages) feature.
+                </p>
+                <table style="font-size:65%;border: 1px solid black">
+                  <tr>
+                    <th>ID (#)​</th>
+                    <th>Center of<br/>Gravity​</th>
+                    <th>Width</th>
+                    <th>Height</th>
+                    <th style="color:darkred">Area​</th>
+                    <th>...​</th>
+                  </tr>
+                  <tr>
+                    <td>1​</td><td>...</td><td>...​</td><td>...​</td><td>...​</td><td>...​</td>
+                  </tr>
+                  <tr>
+                    <td>2​</td><td>...</td><td>...​</td><td>...​</td><td>...​</td><td>...​</td>
+                  </tr>
+                  <tr>
+                    <td>...​</td><td>...</td><td>...​</td><td>...​</td><td>...​</td><td>...​</td>
+                  </tr>
+                </table>
+              </div>
             </div>
-            <div style="grid-row:1;grid-column:2">
-              <img src="resource/dp_emphy_pap.jpg" />
+          </section>
+
+          <section>
+            <h2>Unweighted size distribution pointed to a subpopulation of small airspaces</h2>
+            <div style="display:grid;gap:15px;grid-template-columns: 1.25fr 1fr;">
+              <div style="grid-column:1">
+                <p>
+                  Small, red: µ=2.84, σ=0.49 <br/><br/>
+                  $Area_{small} = 10^{2.84} = 631 \mu m^2$
+                  $\begin{align}Diameter_{small} &=2*\sqrt{Area_{small}/\pi} \\
+                  &=30µm
+                  \end{align}$
+                  <br/>
+                  This is inline with the size of a single alveolus. <br/>
+                  <b>"C57BL/6J mice (~35µm) ​ A/J strain (~38µm)"</b> <br/>
+                  <i>Soutiere et al. 2004.​ <br/>
+                  Differences in alveolar size in​ inbred mouse strains. <br/>
+                  Respir Physiol Neurobiol 140(3):283-91.​</i>
+                </p>
+              </div>
+              <div style="grid-column:2">
+                <img style="max-height:50vh" src="resource/ml_1p.png" />
+              </div>
             </div>
-          There are ~300 enclosed airspaces (blobs) in the image:
-          </div>
-          <img src="resource/dp_emphy_gc.jpg" />
-          <img src="resource/dp_emphy_pap.jpg" />
+          </section>
+
+          <section>
+            <h2>Area-weighted size distribution identified two subpopulations of medium & large airspaces</h2>
+            <div style="display:grid;gap:15px;grid-template-columns: 1.25fr 1fr;">
+              <div style="grid-column:1">
+                <p>
+                  <span style="opacity:0.6">Small, dotted: µ=2.84, σ=0.49 </span><br/>
+                  Medium, red: µ=3.38 σ=0.48​ <br/>
+                  Large, green: µ=4.34 σ=0.30 <br/>
+                  <br/>
+                  $Area_{Medium}=10^{3.38}=2399\mu m2​$  (4X) <br/>
+                  $Diameter_{Medium}=56\mu m​$  (2X) <br/>
+                  <br/>
+                  $Area_{Large}=10^{4.34}=21878\mu m2​$  (35X) <br/>
+                  $Diameter_{Large}=167\mu m​$  (6X) <br/>
+                  <br/>
+                  These sizes are inline with the <b>alveolar sac</b> and <b>alveolar duct</b> / <b>area of destruction</b>. <br/>
+                </p>
+              </div>
+              <div style="grid-column:2">
+                <img style="max-height:50vh" src="resource/ml_2p.png" />
+              </div>
+            </div>
+            <p>Colored as <span style="color:green;font-weight:900;-webkit-text-stroke: .8px black">alveolus</span>, <span style="color:yellow;font-weight:900;-webkit-text-stroke: .8px black">alveolar sac</span>, and <span style="color:red;font-weight:900;-webkit-text-stroke: .8px black">alveolar duct & area of destruction</span>.
+            </p>
+          </section>
+
+          <section>
+            <h2>Ductal/Destructive Fraction (DF) is a more sensitive and robust indicator than MLI.</h2>
+            <div style="display:grid;grid-gap:0px;" >
+              <p style="grid-row:1;grid-column:1/3;margin:5px">Healthy control<br/> MLI=62µm DF=23%</p>
+              <img style="grid-row:2;grid-column:1;max-height:20vh;margin:0px" src="resource/dp_healthy_gc.jpg" />
+              <img style="grid-row:2;grid-column:2;max-height:20vh;margin:0px" src="resource/dp_healthy_pap.jpg" />
+              <p style="grid-row:1;grid-column:3/5;margin:5px">Emphysema<br/> MLI=83µm <b>(↑34%)</b> DF=44% <b>(↑91%)</b>​</p>
+              <img style="grid-row:2;grid-column:3;max-height:20vh;margin:0px" src="resource/dp_emphy_gc.jpg" />
+              <img style="grid-row:2;grid-column:4;max-height:20vh;margin:0px" src="resource/dp_emphy_pap.jpg" />
+              <img style="grid-row:3;grid-column:1/4;max-height:24vh;margin:15px auto" src="resource/pap_robust.jpg" />
+              <img style="grid-row:3;grid-column:4;max-height:24vh;margin:15px auto" src="resource/ajrcmb.gif" />
+            </div>
           </section>
 
 
-          <!-- CV_areafeature.png
-          ajrcmb.gif
-          cells_bg.png
-          cells_fg.png
-          cells_label_table.png
-          cells_mask_label.png
-          cnn_basic.png
-          cnn_faster_rcnn_eg.png
-          cnn_mask_rcnn.png
-          cnn_mask_rcnn_applied.jpg
-          cnn_mask_rcnn_eg.png
-          cnn_unet.jpg
-          dp_6seg.jpg
-          dp_healthy_gc.jpg
-          dp_healthy_pap.jpg
-          mibiome_4mice.png
-          mibiome_baseline_4bar.jpg
-          mibiome_population.jpg
-          ml_1p.png
-          ml_3color.png
-          ml_p2.png
-          pap_dev1.png
-          pap_dev2.png
-          pap_robust.jpg
-          pap_screenshot.png
-          segmentation_types.jpg -->
+        <section>
+          <h2>Prototyped in R, further developed into a C#/WPF desktop-app for better speed and user experience.</h2>
+          <div style="display:grid;grid-gap:10px" >
+            <div style="grid-row:1/3;grid-column:1" >
+              <p style="margin:0px;text-align:center;" >
+                ~1000 lines of XAML code for UI​
+              </p>
+              <img style="max-height:26vh;margin:auto" src="resource/pap_dev1.png" />
+            </div>
+            <div style="grid-row:1/3;grid-column:2">
+            <p style="margin:0px;text-align:center" >
+              ~3000 lines of C# code for computation​
+            </p>
+            <img style="max-height:26vh;margin:auto" src="resource/pap_dev2.png" />
+            </div>
+          <img class="#fragment" style="grid-row:2/4;grid-column:1/3;max-height:38vh;margin:auto" src="resource/pap_screenshot.png" />
+        </section>
 
+        <section>
+          <h2>Convolutional neural network is capable of tissue segmentation and cell classification.</h2>
+          <div style="display:grid;grid-gap:5px" >
+            <p style="grid-row:1;grid-column:3;margin:0px">
+              CNN applies a sliding windows to first extract low-level features and layer-by-layer captures high-level features enough to perform <b>classification</b>, <b>segmentation</b>, and <b>instance/object detection</b> tasks. <br/><br/>
+              semantic <--> uncountable tissue <br/>
+              instance <--> countable cells
+            </p>
+            <img style="grid-row:1;grid-column:1/3;max-height:34vh;margin:0px" src="resource/cnn_basic.png" />
+            <img style="grid-row:2;grid-column:1/4;max-height:18vh;margin:0px" src="resource/segmentation_types.jpg" title="https://stackoverflow.com/questions/33947823/what-is-semantic-segmentation-compared-to-segmentation-and-scene-labeling"/>
+        </div>
+        </section>
 
-            </section>
+      <section>
+        <div>
+          <h2>Precise segmentation can be achieved and optimized based on UNet architecture.</h2>
+          <div style="display:grid;grid-gap:0px;grid-template-rows: 1.8fr 1.3fr 0.4fr;font-size:84%">
+            <img style="grid-row:1/3;grid-column:1/6;margin:0px auto;max-height:37vh;" src="resource/cnn_unet.jpg" />
+            <p style="grid-row:1;grid-column:2/4;text-align:center">
+              Training input is the same while the B&W training output can be the background, two normal histological regions of the lung, or pathological lesions.
+            </p>
+            <img style="grid-row:2/4;grid-column:2/4;max-height:29vh;margin:auto" src="resource/dp_6seg.jpg" />
+            <p style="grid-row:3;grid-column:1">CNN backbone optimization:​ VGG16 -> ResNet -> DenseNet​</p>
+            <p style="grid-row:3;grid-column:4">Six-Color Segmentation Map​: Multi-Class Accuracy 96%​</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Cell classification, counting and outlining can be performed via Mask R-CNN</h2>
+        <div style="display:grid;grid-gap:0px" >
+          <!-- <img src="resource/cnn_faster_rcnn_eg.png" title="https://medium.com/@jonathan_hui/image-segmentation-with-mask-r-cnn-ebe6d793272​" /> -->
+          <img style="grid-row:1;grid-column:1;margin:-10px 0px;max-height:24vh" src="resource/cnn_mask_rcnn_eg.png" title="https://medium.com/@jonathan_hui/image-segmentation-with-mask-r-cnn-ebe6d793272​" />
+          <img style="grid-row:1;grid-column:2;margin:-10px 0px;max-height:33vh" src="resource/cnn_mask_rcnn.png" />
+          <div style="grid-row:2;grid-column:1/3;max-height:30vh;overflow: hidden;margin:-20px auto">
+            <img style="max-height:45vh;object-fit:cover;object-position:top;" src="resource/cnn_mask_rcnn_applied.jpg" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <h1>Summary</h1>
+        <table style="font-size:50%">
+          <tr>
+            <th></th>
+            <th>Integrated Omics</th>
+            <th>Machine Learning</th>
+            <th>External Database</th>
+            <th>Workflow Automation</th>
+          </tr>
+          <tr>
+            <th>LSU-PhD</th>
+            <td>
+              Phenome (lung);
+              Transcrptome;
+              Epigenome
+            </td>
+            <td></td>
+            <td>Gene (WebGestalt);
+              microRNA (miRBase, TargetScan)</td>
+              <td>VBA macro; VB/WinForm app</td>
+            </tr>
+          <tr>
+            <th>CU-PostDoc</th>
+            <td>
+              Microbiome (gut, lung)<br/>
+            </td>
+            <td>
+              CV (airspace feature);
+              GMM (airspace categorization);
+              DL/CNN (tissue seg, cell recog)
+            </td>
+            <td></td>
+            <td>
+              R script for gridline counting;
+              C#/WPF app for parenchymal airspace profiling
+            </td>
+          </tr>
+        </table>
+      </section>
+
+        </section>
 
             <section>
                 <section>
@@ -456,6 +636,59 @@
           <h4>Unified and accurate genetic variant calling and risk assessment pipeline - Next-gen & 3rd-gen sequencing,
             bioinfo pipeline engineering and algorithm development.</h4>
                     <img style="max-width:24vw;max-height:18vh" src="resource/Asuragen.png" />
+                </section>
+                <section>
+                  <h1>Summary</h1>
+                  <table style="font-size:50%">
+                    <tr>
+                      <th></th>
+                      <th>Integrated Omics</th>
+                      <th>Machine Learning</th>
+                      <th>External Database</th>
+                      <th>Workflow Automation</th>
+                    </tr>
+                    <tr>
+                      <th>LSU-PhD</th>
+                      <td>
+                        Phenome (lung);
+                        Transcrptome;
+                        Epigenome
+                      </td>
+                      <td></td>
+                      <td>Gene (WebGestalt);
+                        microRNA (miRBase, TargetScan)</td>
+                        <td>VBA macro; VB/WinForm app</td>
+                      </tr>
+                    <tr>
+                      <th>CU-PostDoc</th>
+                      <td>
+                        Microbiome (gut, lung)<br/>
+                      </td>
+                      <td>
+                        CV (airspace feature);
+                        GMM (airspace categorization);
+                        DL/CNN (tissue seg, cell recog)
+                      </td>
+                      <td></td>
+                      <td>
+                        R script for gridline counting;
+                        C#/WPF app for parenchymal airspace profiling
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Asuragen</th>
+                      <td>
+                        Genome (human)<br/>
+                      </td>
+                      <td>
+                        DL (variant calling)
+                      </td>
+                      <td>
+                        gnomAD; ClinVar
+                      </td>
+                      <td>Unified bioinfo pipeline built with Nextflow</td>
+                    </tr>
+                  </table>
                 </section>
             </section>
 
@@ -467,16 +700,162 @@
                     <h4>Omics profiling across different compound treatments and animal models of cardiovascular diseases.</h4>
                     <img style="max-width:24vw;max-height:18vh" src="resource/Myokardia.png" />
                 </section>
+                <section>
+                  <h1>Summary</h1>
+                  <table style="font-size:50%">
+                    <tr>
+                      <th></th>
+                      <th>Integrated Omics</th>
+                      <th>Machine Learning</th>
+                      <th>External Database</th>
+                      <th>Workflow Automation</th>
+                    </tr>
+                    <tr>
+                      <th>LSU-PhD</th>
+                      <td>
+                        Phenome (lung);
+                        Transcrptome;
+                        Epigenome
+                      </td>
+                      <td></td>
+                      <td>Gene (WebGestalt);
+                        microRNA (miRBase, TargetScan)</td>
+                        <td>VBA macro; VB/WinForm app</td>
+                      </tr>
+                    <tr>
+                      <th>CU-PostDoc</th>
+                      <td>
+                        Microbiome (gut, lung)<br/>
+                      </td>
+                      <td>
+                        CV (airspace feature);
+                        GMM (airspace categorization);
+                        DL/CNN (tissue seg, cell recog)
+                      </td>
+                      <td></td>
+                      <td>
+                        R script for gridline counting;
+                        C#/WPF app for parenchymal airspace profiling
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Asuragen</th>
+                      <td>
+                        Genome (human)<br/>
+                      </td>
+                      <td>
+                        DL (variant calling)
+                      </td>
+                      <td>
+                        gnomAD; ClinVar
+                      </td>
+                      <td>Unified bioinfo pipeline built with Nextflow</td>
+                    </tr>
+                    <tr>
+                      <th>MyoKardia</th>
+                      <td>
+                        Phenome (heart);
+                        Transcriptome
+                      </td>
+                      <td></td>
+                      <td>Gene (clusterProfiler)</td>
+                      <td>R/Shiny app</td>
+                    </tr>
+                  </table>
+                </section>
             </section>
 
             <section>
-                <section>
-                    <h1>BMS</h1>
-          <hr style="margin:5%" />
-                    <h4>Diverse exposure to target nomination, novel therapeutic modality, consortium datamining, ...</h4>
-                    <img style="max-width:24vw;max-height:18vh" src="resource/BMS.png" />
-                </section>
-            </section>
+              <section>
+                <h1>BMS</h1>
+                <hr style="margin:5%" />
+                <h4>Diverse exposure to target nomination, novel therapeutic modality, consortium datamining, ...</h4>
+                <img style="max-width:24vw;max-height:18vh" src="resource/BMS.png" />
+              </section>
+              <section>
+                <h1>Summary</h1>
+                <table style="font-size:50%">
+                  <tr>
+                    <th></th>
+                    <th>Integrated Omics</th>
+                    <th>Machine Learning</th>
+                    <th>External Database</th>
+                    <th>Workflow Automation</th>
+                  </tr>
+                  <tr>
+                    <th>LSU-PhD</th>
+                    <td>
+                      Phenome (lung);
+                      Transcrptome;
+                      Epigenome
+                    </td>
+                    <td></td>
+                    <td>Gene (WebGestalt);
+                      microRNA (miRBase, TargetScan)</td>
+                      <td>VBA macro; VB/WinForm app</td>
+                    </tr>
+                  <tr>
+                    <th>CU-PostDoc</th>
+                    <td>
+                      Microbiome (gut, lung)<br/>
+                    </td>
+                    <td>
+                      CV (airspace feature);
+                      GMM (airspace categorization);
+                      DL/CNN (tissue seg, cell recog)
+                    </td>
+                    <td></td>
+                    <td>
+                      R script for gridline counting;
+                      C#/WPF app for parenchymal airspace profiling
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Asuragen</th>
+                    <td>
+                      Genome (human)<br/>
+                    </td>
+                    <td>
+                      DL (variant calling)
+                    </td>
+                    <td>
+                      gnomAD; ClinVar
+                    </td>
+                    <td>Unified bioinfo pipeline built with Nextflow</td>
+                  </tr>
+                  <tr>
+                    <th>MyoKardia</th>
+                    <td>
+                      Phenome (heart);
+                      Transcriptome
+                    </td>
+                    <td></td>
+                    <td>Gene (clusterProfiler)</td>
+                    <td>R/Shiny app</td>
+                  </tr>
+                  <tr>
+                    <th>BMS</th>
+                    <td>
+                      Translatome as in Ribo-seq
+                    </td>
+                    <td>
+                      NLP (medical records);
+                      Ranking (targets);
+                      Feature importance (biomarkers);
+                      VAE for AAV capsid evo.
+                    </td>
+                    <td>BioBank, Heart Failure Consortium</td>
+                    <td>RMarkdown-based analysis & visualization toolkit</td>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <th>In-depth profiling to study omics interactions and disease mechanism.</th>
+                    <th>Leverage AI for improved assessment and optimized path.</th>
+                    <th>Mine dataset for target ideation or put studies in a broder context.</th>
+                    <th>Work efficiently and enpower the entire team.</th>
+                  </tr>
+                </table>
+              </section>
 
             </section>
         </div>
@@ -491,8 +870,9 @@
             progress: true,
             history: true,
             center: true,
-      zoom: true,
-            transition: 'convex',
+            zoom: true,
+            // transition: 'convex',
+            transition: 'page',
             slideNumber: 'c/t',
             margin: 0.05,
       // width: 960, height: 800,
