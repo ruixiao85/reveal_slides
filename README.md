@@ -1,39 +1,54 @@
-# reveal_slides
+% Title
+% Name
+% yyyy/mm/dd
 
-## work with vscode-reveal plugin.
+# Introduction
 
-## compatible with [theno's reveal.js template](https://github.com/theno/revealjs_template).
+---
 
+This work incorporated my personal preference and removed the need to serve markdown indirectly. Thanks to [theno](https://github.com/theno/revealjs_template)'s selection of tools and [jgm's pandoc](https://github.com/jgm/pandoc) for converting markdown to html.
 
-### download or clone revealjs_template
+# How to use it in Linux
 
-```sh
-unzip revealjs_template-master.zip
-# OR
-git clone https://github.com/theno/revealjs_template.git
-```
+---
 
-### use template files
-
-```sh
-# backup rt
-mv revealjs_template/slides.md slides_rt.md
-mv revealjs_template/index.html index_rt.md
-
-# re-hardlink with rx
-ln -snf ../index_rx.html revealjs_template/index.html
-ln -snf ../OmicsImageSeq.md revealjs_template/slides.md
-ln -snf ../resource revealjs_template/resource
-```
-
-
-### npm preparation and localhost serving
+### Clone this repository
 
 ```sh
-sudo apt update
-sudo apt install npm
-#sudo apt install node-grunt-cli
-npm update  # only required once
-npm start
+git clone --branch main https://github.com/ruixiao85/reveal_slides.git
 ```
-vscode liveserver should now work on the relinked index.html under **revealjs_template**
+
+---
+
+### install_pandoc.sh
+
+```sh
+apt update && apt intall pandoc # sudo if needed
+```
+
+---
+
+### md_revealjs.sh [input markdown] [output html]
+
+```sh
+#!/usr/bin/env bash
+echo "self, scpt=${0}"; scpt=${0}
+FI=${1:-README.md}; echo "arg1, fille_input=$FI"
+FO=${2:-${FI%.*}.html}; echo "arg2, file_output=$FO"
+
+cat revealjs_before.html > ${FO}
+pandoc -f markdown -t revealjs ${FI} >> ${FO}
+cat revealjs_after.html >> ${FO}
+```
+You can pass other markdown files but default to README.md (this file) and output to README.html.
+
+
+# Check the results
+
+---
+
+You should be able to directly open the output html in any browser. The subfolders [css, js, lib, plugin] are required for the html file to function properly.
+
+"#" heading 1 may require the entire slide without any other content for the verticle movement to work (2-level hierachy).
+
+Contact [Rui](mailto:ruixiao85@gmail.com) for any questions 😊

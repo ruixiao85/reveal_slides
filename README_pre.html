@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="plugin/toc-progress/toc-progress.css">
+    <link rel="stylesheet" href="plugin/title-footer/title-footer.css">
+    <link rel="stylesheet" href="plugin/menu/menu.css">
+    <style>
+        hr { border: 1px solid darkred; }
+        .reveal h1 { font-size: 160%;text-transform:none }
+        .reveal h2 { font-size: 140%;text-transform:none;text-align:left;color:#900 }
+        .reveal h3 { font-size: 120%;text-transform:none }
+        .reveal h4 { font-size: 105%;text-transform:none }
+        .reveal h5 { font-size: 90% }
+        .reveal h6 { font-size: 80% }
+        .reveal p, .reveal ol li, .reveal ul li { font-size: 72%;text-align:left }
+    </style>
+
+    <title>reveal.js slides</title>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides"><section><section id="introduction" class="title-slide slide level1"><h1>Introduction</h1></section><section class="slide level3">
+
+<p>This work incorporated my personal preference and removed the need to serve markdown indirectly. Thanks to <a href="https://github.com/theno/revealjs_template">theno</a>’s selection of tools and <a href="https://github.com/jgm/pandoc">jgm’s pandoc</a> for converting markdown to html.</p>
+</section></section>
+<section><section id="how-to-use-it-in-linux" class="title-slide slide level1"><h1>How to use it in Linux</h1></section><section id="clone-this-repository" class="slide level3">
+<h3>Clone this repository</h3>
+<pre class="sh"><code>git clone --branch main https://github.com/ruixiao85/reveal_slides.git</code></pre>
+</section><section id="install_pandoc.sh" class="slide level3">
+<h3>install_pandoc.sh</h3>
+<pre class="sh"><code>apt update &amp;&amp; apt intall pandoc # sudo if needed</code></pre>
+</section><section id="md_revealjs.sh-input-markdown-output-html" class="slide level3">
+<h3>md_revealjs.sh [input markdown] [output html]</h3>
+<pre class="sh"><code>#!/usr/bin/env bash
+echo &quot;self, scpt=${0}&quot;; scpt=${0}
+FI=${1:-README.md}; echo &quot;arg1, fille_input=$FI&quot;
+FO=${2:-${FI%.*}.html}; echo &quot;arg2, file_output=$FO&quot;
+
+cat revealjs_before.html &gt; ${FO}
+pandoc -f markdown -t revealjs ${FI} &gt;&gt; ${FO}
+cat revealjs_after.html &gt;&gt; ${FO}</code></pre>
+<p>You can pass other markdown files but default to README.md (this file) and output to README.html.</p>
+</section></section>
+<section><section id="check-the-results" class="title-slide slide level1"><h1>Check the results</h1></section><section class="slide level3">
+
+<p>You should be able to directly open the output html in any browser. The subfolders [css, js, lib, plugin] are required for the html file to function properly.</p>
+<p>“#” heading 1 may require the entire slide without any other content for the verticle movement to work (2-level hierachy).</p>
+<p>Contact <a href="mailto:ruixiao85@gmail.com">Rui</a> for any questions 😊</p>
+</section></section>
+          </div>
+      </div>
+
+      <script src="lib/js/head.min.js"></script>
+      <script src="js/reveal.js"></script>
+      <script>
+          Reveal.initialize({
+              // reveal.js configuration, cf. https://github.com/hakimel/reveal.js/#configuration
+              controls: true,
+              progress: true,
+              history: true,
+              center: true,
+              zoom: true,
+              // transition: 'convex',
+              transition: 'page',
+              slideNumber: 'c/t',
+              margin: 0.05,
+        // width: 960, height: 800,
+        width: 1100, height: 800,
+              // width: 1920, height: 1080,
+
+              // Optional libraries used to extend on reveal.js
+              dependencies: [
+                  { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+
+                  // enable built-in plugins
+                  { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                  { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                  { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+                  { src: 'plugin/zoom/zoom.js' },
+                  { src: 'plugin/notes/notes.js' },
+                  { src: 'plugin/math/math.js' },
+
+                  // enable additionally installed plugins
+                  { src: 'plugin/menu/menu.js' },
+                  { src: 'plugin/title-footer/title-footer.js', async: true, callback: function () { title_footer.initialize(); } },
+                  { src: 'plugin/toc-progress/toc-progress.js', async: true, callback: function () { toc_progress.initialize(); toc_progress.create(); } },
+              ],
+
+              // plugin settings
+
+              // plugin math, cf. https://github.com/hakimel/reveal.js#mathjax
+              math: {
+                  mathjax: 'js/MathJax.js',
+                  config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+              },
+
+              // plugin menu, cf. https://github.com/denehyg/reveal.js-menu#configuration
+              menu: {
+                  side: 'left',
+                  numbers: false,
+                  titleSelector: 'h1, h2, h3, h4, h5, h6',
+                  hideMissingTitles: false,
+                  markers: false,
+                  custom: false,
+                  themes: [
+                      { name: 'Black', theme: 'css/theme/black.css' },
+                      { name: 'White', theme: 'css/theme/white.css' },
+                      { name: 'League', theme: 'css/theme/league.css' },
+                      { name: 'Sky', theme: 'css/theme/sky.css' },
+                      { name: 'Beige', theme: 'css/theme/beige.css' },
+                      { name: 'Simple', theme: 'css/theme/simple.css' },
+                      { name: 'Serif', theme: 'css/theme/serif.css' },
+                      { name: 'Blood', theme: 'css/theme/blood.css' },
+                      { name: 'Night', theme: 'css/theme/night.css' },
+                      { name: 'Moon', theme: 'css/theme/moon.css' },
+                      { name: 'Solarized', theme: 'css/theme/solarized.css' }
+                  ],
+                  transitions: true,
+                  openButton: true,
+                  openSlideNumber: true,
+                  keyboard: true
+              },
+          });
+      </script>
+  </body>
+
+  </html>
