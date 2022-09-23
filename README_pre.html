@@ -29,9 +29,15 @@
 
 <p>This work incorporated my personal preference and removed the need to serve markdown indirectly. Thanks to <a href="https://github.com/theno/revealjs_template">theno</a>’s selection of tools and <a href="https://github.com/jgm/pandoc">jgm’s pandoc</a> for converting markdown to html.</p>
 </section></section>
-<section><section id="how-to-use-it-in-linux" class="title-slide slide level1"><h1>How to use it in Linux</h1></section><section id="clone-this-repository" class="slide level3">
-<h3>Clone this repository</h3>
-<pre class="sh"><code>git clone --branch main https://github.com/ruixiao85/reveal_slides.git</code></pre>
+<section><section id="how-to-use-it-in-linux" class="title-slide slide level1"><h1>How to use it in Linux</h1></section><section id="download-the-release-or-clone-the-repository" class="slide level3">
+<h3>Download the release or Clone the repository</h3>
+<pre class="sh"><code># download the latest release (recommended)
+curl -s https://api.github.com/repos/ruixiao85/reveal_slides/releases/latest \
+| grep &quot;tarball_url&quot; \
+| cut -d \&quot; -f 4 \
+| xargs wget -qO - | tar zxvf -</code></pre>
+<pre class="sh"><code># or clone the repo
+git clone --branch main https://github.com/ruixiao85/reveal_slides.git</code></pre>
 </section><section id="install_pandoc.sh" class="slide level3">
 <h3>install_pandoc.sh</h3>
 <pre class="sh"><code>apt update &amp;&amp; apt intall pandoc # sudo if needed</code></pre>

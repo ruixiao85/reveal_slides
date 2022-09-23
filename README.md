@@ -12,9 +12,17 @@ This work incorporated my personal preference and removed the need to serve mark
 
 ---
 
-### Clone this repository
+### Download the release or Clone the repository
 
 ```sh
+# download the latest release (recommended)
+curl -s https://api.github.com/repos/ruixiao85/reveal_slides/releases/latest \
+| grep "tarball_url" \
+| cut -d \" -f 4 \
+| xargs wget -qO - | tar zxvf -
+```
+```sh
+# or clone the repo
 git clone --branch main https://github.com/ruixiao85/reveal_slides.git
 ```
 
