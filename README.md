@@ -1,12 +1,13 @@
-% Title
-% Name
-% yyyy/mm/dd
 
-# Introduction
+# About the project
 
 ---
 
-This work incorporated my personal preference and removed the need to serve markdown indirectly. Thanks to [theno](https://github.com/theno/revealjs_template)'s selection of tools and [jgm's pandoc](https://github.com/jgm/pandoc) for converting markdown to html.
+> 1.0 This work incorporated my personal preference and removed the need to serve markdown indirectly. Also relatively convenient and portable.
+
+> 1.1 Now the repo is serving as a subfolder, which leaves your work directory (markdown and html) cleaner.
+
+Thanks to [theno](https://github.com/theno/revealjs_template)'s selection of tools and [jgm's pandoc](https://github.com/jgm/pandoc) for converting markdown to html.
 
 # How to use it in Linux
 
@@ -37,7 +38,8 @@ mv `ls -td *reveal_slides*/ | head -1` reveal_slides
 
 If you don't have any, you can copy the included example to your work directory:
 ```sh
-cp reveal_slides/README.md .
+cp reveal_slides/README.md . # template needed to create slides
+cp reveal_slides/README*.html . # pre-rendered html slides
 ```
 
 ---
