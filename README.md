@@ -7,6 +7,8 @@
 
 > 1.1 Now the repo is serving as a subfolder, which leaves your work directory (markdown and html) cleaner.
 
+> 1.2 Centered around a new html-rich "slide.md" file, with +js,css customizable scripts. Also have md_strip_html.py to strip down to plain markdown file.
+
 Thanks to [theno](https://github.com/theno/revealjs_template)'s selection of tools and [jgm's pandoc](https://github.com/jgm/pandoc) for converting markdown to html.
 
 ## Testing
