@@ -2,7 +2,7 @@
 import sys
 import os
 scpt=sys.argv[0]; narg=len(sys.argv)
-fi=sys.argv[1] if narg>1 else "README.md"; print(f"arg1: file input [{fi}]")
+fi=sys.argv[1] if narg>1 else "slide.md"; print(f"arg1: file input [{fi}]")
 fb="".join(os.path.splitext(fi)[0:-1])
 fo=sys.argv[2] if narg>2 else fb+".html"; print(f"arg2: file output [{fo}]")
 hs=int(sys.argv[3]) if narg>3 else 1; print(f"arg3: heading split [{hs}], 0-nosplit, 1-split@heading1")

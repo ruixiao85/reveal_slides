@@ -1,5 +1,8 @@
 export/**
 
+
+.vscode
+
 # Logs
 logs
 *.log

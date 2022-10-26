@@ -102,6 +102,7 @@ bash reveal_slides/md_revealjs.py # [input markdown] [output html] [heading spli
 
 This allows you to further split at high heading levels, for example, "#". As a result, the input markdown file will be split into multiple markdown files and lower-level headings will move up accordingly.
 
+<div class="grid"><div class="gc12">
 
 * main.md
 ```md
@@ -112,6 +113,7 @@ This allows you to further split at high heading levels, for example, "#". As a 
 ## section 2.1
 ```
 
+</div><div class="gc23">
 
 * main_topic1.md
 ```md
@@ -124,6 +126,7 @@ This allows you to further split at high heading levels, for example, "#". As a 
 # section 2.1
 ```
 
+</div></div>
 
 ## Strip html tags for plain markdown
 
